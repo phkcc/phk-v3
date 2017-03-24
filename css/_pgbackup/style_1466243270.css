@@ -1,0 +1,180 @@
+
+
+/* Custom Stylesheet */
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo
+{
+    color: #444;
+}
+
+p
+{
+    line-height: 2rem;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.button-collapse
+{
+    color: #fbc02d;
+}
+
+/* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #fbc02d;
+   }
+      .input-field input[type=email]:focus + label {
+     color: #fbc02d;
+   }
+      .input-field input[type=tel]:focus + label {
+     color: #fbc02d;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #fbc02d;
+     box-shadow: 0 1px 0 0 #fbc02d;
+   }
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid #fbc02d;
+     box-shadow: 0 1px 0 0 #fbc02d;
+   }
+      .input-field input[type=tel]:focus {
+     border-bottom: 1px solid #fbc02d;
+     box-shadow: 0 1px 0 0 #fbc02d;
+   }
+
+
+.hero
+{
+    min-height: 500px !important;
+
+}
+
+.parallax-container
+{
+    min-height: 400px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section
+{
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width : 992px)
+{
+    .parallax-container .section
+    {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section
+    {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width : 600px)
+{
+    #index-banner .section
+    {
+        top: 0;
+    }
+
+	.btn-large
+	{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	}
+
+
+}
+
+.icon-block
+{
+    padding: 0 15px;
+}
+
+.icon-block .material-icons
+{
+    font-size: inherit;
+}
+
+footer.page-footer
+{
+    margin: 0;
+}
+
+.centered
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.card.xs, .card.medium, .card.large
+{
+    position: relative;
+}
+
+.card.xs .card-image, .card.medium .card-image, .card.large .card-image
+{
+	max-height: 100%;
+    overflow: hidden;
+}
+
+.card.xs .card-content, .card.medium .card-content, .card.large .card-content
+{
+	max-height: 100%;
+    overflow: hidden;
+}
+
+.card.xs .card-action, .card.medium .card-action, .card.large .card-action
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card.xs
+{
+    height: 250px;
+}
+
+.noparallax
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.noparallax img {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.inverted {
+	filter: invert(100%);
+}

@@ -1,0 +1,226 @@
+/* Custom Stylesheet */
+
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,600');
+.icon-block {
+	padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+nav ul a, nav .brand-logo {
+	color: #212121;
+	font-family: "Roboto Mono", monospace;
+	font-weight: 500;
+	font-size: 13px;
+}
+html {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.7);
+	letter-spacing: 0.5px;
+}
+.light {
+	font-weight: 300;
+}
+.detail-page {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 1.8;
+	letter-spacing: 0.25px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto Mono", monospace;
+	font-weight: 300;
+	line-height: 1.1;
+}
+.intro::after {
+	content: "";
+	width: 48px;
+	height: 2px;
+	background: #6200ea;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+h1 {
+	font-size: 2.92rem;
+	line-height: 110%;
+	margin: 2rem 0 1.168rem 0;
+}
+h2 {
+	font-size: 2.28rem;
+	line-height: 110%;
+	margin: 1.14rem 0 0.912rem 0;
+}
+h3 {
+	font-size: 2.28rem;
+	line-height: 110%;
+	margin: 1.14rem 0 0.912rem 0;
+}
+h6 {
+	font-size: 13px;
+	font-weight: 500;
+}
+.home {
+	height: 100vh;
+}
+a, a:active, a:focus, a:visited {
+	color: rgba(0, 0, 0, 0.87);
+}
+.category, .category-b {
+	font-size: 14px;
+	font-family: "Roboto Mono", monospace;
+	line-height: 18px;
+	letter-spacing: .05em;
+	font-weight: 500;
+	padding-bottom: 9px;
+	position: relative;
+}
+.category::after {
+	content: "";
+	width: 26px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.category-b::after {
+	content: "";
+	width: 26px;
+	height: 2px;
+	background: #212121;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.type {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+nav .button-collapse i {
+	color: #212121;
+}
+.button {
+	background: transparent;
+	font-family: "Roboto Mono", monospace;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 18px;
+	letter-spacing: .05em;
+	padding: 12px 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 0px!important;
+}
+blockquote {
+	border-left: 3px solid #212121;
+	font-family: "Roboto Mono", monospace;
+	font-size: 16px!important;
+}
+.button-purple {
+	color: #4a148c!important;
+	border: 1px solid #4a148c;
+}
+.button-purple:hover {
+	background: #4a148c;
+	color: #fff!important;
+}
+.button-white {
+	color: #ffffff!important;
+	border: 1px solid #ffffff;
+}
+ul:not(.browser-default) {
+	padding-left: 5em;
+}
+.link {
+	display: block;
+	color: #6200ea;
+	position: relative;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: .05em;
+	margin-top: 21px;
+	font-weight: 500;
+}
+.inverted {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+.card-title
+{
+	font-family: "Roboto Mono", monospace;
+	text-transform: uppercase;
+	line-height: 28px;
+	font-size:20px!important;
+	font-weight: 400!important;
+}
+
+.card-content{
+	font-family: "Roboto Mono", monospace;
+	font-weight: 400;
+}
+
+.card-type {
+	font-size: 10px;
+	letter-spacing: 0px;
+}
+
+
+/* label color */
+
+.input-field label {
+	color: #212121;
+	font-family: "Roboto Mono", monospace;
+	font-weight: 400;
+}
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label, .input-field input[type=email]:focus+label, .input-field input[type=tel]:focus+label, .materialize-textarea {
+	color: #4a148c;
+}
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+	border-bottom: 1px solid #4a148c;
+	box-shadow: 0 1px 0 0 #4a148c;
+}
+
+/* valid color */
+
+.input-field input[type=text].valid {
+	border-bottom: 1px solid #4a148c;
+	box-shadow: 0 1px 0 0 #4a148c;
+}
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+	border-bottom: 1px solid #000;
+	box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+	color: #4a148c;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #4a148c;
+	box-shadow: 0 1px 0 0 #4a148c;
+	color: #4a148c;
+}
