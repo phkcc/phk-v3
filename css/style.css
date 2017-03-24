@@ -223,3 +223,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 	box-shadow: 0 1px 0 0 #4a148c;
 	color: #4a148c;
 }
+.card .card-image img {
+	top: auto;
+	bottom: 25px;
+}
